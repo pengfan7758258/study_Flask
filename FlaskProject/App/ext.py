@@ -1,10 +1,10 @@
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
-models = SQLAlchemy()
-migrate = Migrate()
+db = SQLAlchemy()  # orm
+migrate = Migrate()  # 数据库迁移
 
 
 def init_ext(app):
-    models.init_app(app)
-    migrate.init_app(app, models)
+    db.init_app(app)
+    migrate.init_app(app, db)

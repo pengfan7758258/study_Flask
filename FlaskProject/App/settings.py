@@ -3,16 +3,16 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def get_db_uri(dbinfo):
-    engine = dbinfo.get('ENGINE') or 'sqlite'
-    driver = dbinfo.get('DRIVER') or 'sqlite'
-    user = dbinfo.get('USER') or ""
-    password = dbinfo.get('PASSWORD') or ""
-    host = dbinfo.get('HOST') or ""
-    port = dbinfo.get('PORT') or ""
-    name = dbinfo.get('NAME') or ""
+def get_url(dbinfo):
+    engine = dbinfo.get('ENGINE', None)
+    driver = dbinfo.get('DRIVER', None)
+    user = dbinfo.get('USER', None)
+    password = dbinfo.get('PASSWORD', None)
+    host = dbinfo.get('HOST', None)
+    port = dbinfo.get('PORT', None)
+    database = dbinfo.get('DATABASE', None)
 
-    return "{}+{}://{}:{}@{}:{}/{}".format(engine, driver, user, password, host, port, name)
+    return "{}+{}://{}:{}@{}:{}/{}".format(engine, driver, user, password, host, port, database)
 
 
 class Config:
@@ -27,65 +27,65 @@ class DevelopConfig(Config):
     DEBUG = True
 
     dbinfo = {
-        'ENGINE': "mysql",
-        'DRIVER': "pymysql",
-        'USER': 'root',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
-        'PORT': "3306",
-        'NAME': 'my_flask'
+        "ENGINE": "mysql",
+        "DRIVER": "pymysql",
+        "USER": "root",
+        'PASSWORD': "123",
+        "HOST": "localhost",
+        "PORT": "3306",
+        "DATABASE": "my_flask"
     }
 
-    SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
+    SQLALCHEMY_DATABASE_URI = get_url(dbinfo)
 
 
-class TestConfig(Config):
+class TestingConfig(Config):
     TESTING = True
 
     dbinfo = {
-        'ENGINE': "mysql",
-        'DRIVER': "pymysql",
-        'USER': 'root',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
-        'PORT': "3306",
-        'NAME': 'my_flask'
+        "ENGINE": "mysql",
+        "DRIVER": "pymysql",
+        "USER": "root",
+        'PASSWORD': "123",
+        "HOST": "localhost",
+        "PORT": "3306",
+        "DATABASE": "my_flask"
     }
 
-    SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
+    SQLALCHEMY_DATABASE_URI = get_url(dbinfo)
 
 
 class StagingConfig(Config):
     dbinfo = {
-        'ENGINE': "mysql",
-        'DRIVER': "pymysql",
-        'USER': 'root',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
-        'PORT': "3306",
-        'NAME': 'my_flask'
+        "ENGINE": "mysql",
+        "DRIVER": "pymysql",
+        "USER": "root",
+        'PASSWORD': "123",
+        "HOST": "localhost",
+        "PORT": "3306",
+        "DATABASE": "my_flask"
     }
 
-    SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
+    SQLALCHEMY_DATABASE_URL = get_url(dbinfo)
 
 
 class ProductConfig(Config):
     dbinfo = {
-        'ENGINE': "mysql",
-        'DRIVER': "pymysql",
-        'USER': 'root',
-        'PASSWORD': '123',
-        'HOST': 'localhost',
-        'PORT': "3306",
-        'NAME': 'my_flask'
+        "ENGINE": "mysql",
+        "DRIVER": "pymysql",
+        "USER": "root",
+        'PASSWORD': "123",
+        "HOST": "localhost",
+        "PORT": "3306",
+        "DATABASE": "my_flask"
     }
 
-    SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
+    SQLALCHEMY_DATABASE_URI = get_url(dbinfo)
 
 
 envs = {
     'develop': DevelopConfig,
-    'testing': TestConfig,
+    'testing': TestingConfig,
     'staging': StagingConfig,
     'product': ProductConfig,
     'default': DevelopConfig
