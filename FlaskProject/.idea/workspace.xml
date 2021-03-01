@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c1f9cc7-b762-43c9-a87e-1766f218a2dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/FlaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlaskProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98444988-1a20-4f26-adb8-5d8aa378e57f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/98444988-1a20-4f26-adb8-5d8aa378e57f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d71ddc9f-d707-4339-adaa-d432d3a2fda8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d71ddc9f-d707-4339-adaa-d432d3a2fda8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ext.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/sqlite.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/views/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/views/first_blue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/views/second_blue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/views/first_blue.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/views/first_blue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/120f5ddaf8af_.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +41,13 @@
         <item name="my_flask@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="my_flask: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="my_flask@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="my_flask: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="ser: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -90,8 +87,8 @@
       <recent name="D:\myHome\myflask\FlaskProject\App" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (manage.py)">
-    <configuration name="Flask (manage.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Flask server.FlaskProject">
+    <configuration name="Flask" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <module name="FlaskProject" />
       <option name="target" value="$PROJECT_DIR$/manage.py" />
       <option name="targetType" value="PATH" />
@@ -112,7 +109,7 @@
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Users\PF\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -121,9 +118,13 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flask server.FlaskProject" />
+      <item itemvalue="Flask server.Flask" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (manage.py)" />
+        <item itemvalue="Flask server.Flask" />
       </list>
     </recent_temporary>
   </component>
@@ -144,6 +145,7 @@
       <workItem from="1613910937373" duration="365000" />
       <workItem from="1614088317572" duration="2139000" />
       <workItem from="1614171366071" duration="1955000" />
+      <workItem from="1614608232653" duration="3855000" />
     </task>
     <servers />
   </component>
@@ -151,14 +153,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="999" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613746945065">
+    <state x="611" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614608349284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="999" y="158" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1613746945065" />
-    <state x="1225" y="263" key="FileChooserDialogImpl" timestamp="1613739198163">
+    <state x="611" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614608349284" />
+    <state x="1225" y="263" key="FileChooserDialogImpl" timestamp="1614610155207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1225" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613739198163" />
+    <state x="1225" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614610155207" />
     <state width="1097" height="266" key="GridCell.Tab.0.bottom" timestamp="1614173475826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -179,10 +181,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1613746959702" />
-    <state x="56" y="242" key="SettingsEditor" timestamp="1613910976506">
+    <state x="82" y="235" key="SettingsEditor" timestamp="1614608298661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="56" y="242" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613910976506" />
+    <state x="82" y="235" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614608298661" />
     <state x="1099" y="336" key="com.intellij.ide.util.TipDialog" timestamp="1614171366696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
