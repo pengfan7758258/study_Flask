@@ -20,6 +20,8 @@ class Config:
 
     TESTING = False
 
+    SECRET_KEY = 'PF'
+
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c1f9cc7-b762-43c9-a87e-1766f218a2dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FlaskProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlaskProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98444988-1a20-4f26-adb8-5d8aa378e57f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/98444988-1a20-4f26-adb8-5d8aa378e57f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d71ddc9f-d707-4339-adaa-d432d3a2fda8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d71ddc9f-d707-4339-adaa-d432d3a2fda8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/ext.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/views/first_blue.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/views/first_blue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +41,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="my_flask: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="my_flask@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="my_flask: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="ser: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -57,6 +49,8 @@
       <list>
         <option value="Flask Main" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -74,10 +68,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -128,6 +124,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -145,7 +144,8 @@
       <workItem from="1613910937373" duration="365000" />
       <workItem from="1614088317572" duration="2139000" />
       <workItem from="1614171366071" duration="1955000" />
-      <workItem from="1614608232653" duration="3855000" />
+      <workItem from="1614608232653" duration="4415000" />
+      <workItem from="1614687561219" duration="6631000" />
     </task>
     <servers />
   </component>
@@ -193,10 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613911092511" />
-    <state x="1108" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613738237607">
+    <state x="1108" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614690606429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1108" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1613738237607" />
+    <state x="1108" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614690606429" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FlaskProject$Flask__manage_py_.coverage" NAME="Flask (manage.py) Coverage Results" MODIFIED="1614173385386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
