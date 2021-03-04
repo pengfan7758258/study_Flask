@@ -1,0 +1,5 @@
+已有数据库 orm 生成models.py:
+    flask-sqlacodegen "mysql+pymysql://ai_rds_dev:FMAI2020#^%#dev@rm-8vb306n86rr1g506bco.mysql.zhangbei.rds.aliyuncs.com:3306/dev_hj_genealogy" --outfile "/Users/bjhanjia/MyCode/hanjia/录入flask/InputSystem/App/models.py"  --flask
+
+注意：
+    在使用python manage.py migrate生成迁移文件的时候，若连接的数据库中的表在models中没有的话，会把连接的数据库没有的表都删除同步了 ****一定注意

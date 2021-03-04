@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="flask_test" uuid="9f5a4a46-e4c5-4275-8a5b-342702895aa8">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://rm-8vb306n86rr1g506bco.mysql.zhangbei.rds.aliyuncs.com:3306/dev_hj_genealogy</jdbc-url>
+    </data-source>
+  </component>
+</project>

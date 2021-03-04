@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newsList</title>
+    <script src="{{ url_for('static',filename='js/encrypt_decrypt.js') }}"></script>
+</head>
+<body>
+<h1>今日新闻</h1>
+
+
+<script>
+    document.write(decodeBase64('{{ encode_cont_twice }}'))
+</script>
+
+</body>
+</html>
