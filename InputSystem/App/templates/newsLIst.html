@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>newsList</title>
-    <script src="{{ url_for('static',filename='js/encrypt_decrypt.js') }}"></script>
+    <script>
+        document.write('<script src="/getshow/?t=' + Date.parse(new Date()) + '"><\/script>');
+    </script>
 </head>
 <body>
 <h1>今日新闻</h1>
 
 
 <script>
-    document.write(decodeBase64('{{ encode_cont_twice }}'))
+    document.write(decodeBase64('{{ encode_cont_twice }}'));
 </script>
 
 </body>

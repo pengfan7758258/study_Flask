@@ -1,6 +1,7 @@
 from flask import Flask
 
 from App.ext import init_ext
+from App.middleware import load_middleware
 from App.settings import envs
 from App.views import init_views
 
@@ -17,5 +18,8 @@ def create_app(env):
 
     # 加载路由
     init_views(app)
+
+    # 加载中间件
+    load_middleware(app)
 
     return app

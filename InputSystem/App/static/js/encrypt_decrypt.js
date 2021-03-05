@@ -58,6 +58,6 @@ function Base64Decode(input) {
 
 function decodeBase64(jj) {
 
-    return Base64Decode(Base64Decode(jj)['replace']('111111', '')['replace']('222222', ''));
+    return Base64Decode(Base64Decode(jj)['\x72\x65\x70\x6c\x61\x63\x65']('\x31\x31\x31\x31\x31\x31', '')['\x72\x65\x70\x6c\x61\x63\x65']('\x32\x32\x32\x32\x32\x32', ''));
 
 }
