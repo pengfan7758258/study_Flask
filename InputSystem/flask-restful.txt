@@ -1,0 +1,49 @@
+输出
+    默认输出字典，可以直接进行序列化
+    如果包含对象
+        默认会抛出异常，对象不可JSON序列化
+    使用格式化工具
+        marshal函数
+        如果使用装饰器 marshal_with
+        条件
+            格式
+                字典格式
+                允许嵌套
+                value是fields.xxx
+            数据
+                允许任何数据
+            如果格式和数据完全对应，数据就是预期的
+            格式比数据中字段多，程序依然正常运行，不存在的字段是默认值，没给默认值就是null
+                默认值:fields.xxx(default="默认值")
+            如果格式比数据中的字段少，程序正常运行，少的字段不会显示
+            以格式的模版为主（结论）
+        结论
+            想要什么格式的返回
+            格式工具（模版）就是什么样的
+            和传入的数据没什么直接关系
+        格式和数据的映射
+            格式中的字段名要和数据库的字段名一致
+            如果要不一致要手动指定映射
+                例如：fields.xxx(attribute="这个要与数据库的一致")
+
+输入
+    parser = reqparse.RequestParser()
+    parser.add_argument('rate', type=int, help='Rate cannot be converted')
+    parser.add_argument('name')
+    args = parser.parse_args()
+    RequestParser
+        使用过程：
+            先定义一个RequestParser对象
+            向对象添加字段
+            从对象中获取字段
+        对象在添加参数的时候，可以实现数据的预校验
+            参数是否必须 required=True
+            数据的类型限制 type=int
+            设置错误提示 help="错误提示信息"
+            接收多个值 action="append"
+            可以接收指定别名 dest="别名" 使用args.get("别名")就能获取内容,相当于重新映射了一次
+            location可以指定数据来源 location=["cookie","headers"] 数据来源是cookie,headers
+
+
+from flask_restful import Api
+    优点：能提前定义模版，数据的返回格式根据模版生成，有就赋值，没有就给默认值，非常好

@@ -2,7 +2,6 @@ from werkzeug.exceptions import HTTPException
 
 from .exception import ApiException
 from .newsView import news_blue
-from ..models import db
 
 
 def global_error_handler(app):

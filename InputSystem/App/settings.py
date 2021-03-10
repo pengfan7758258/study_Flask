@@ -26,6 +26,20 @@ class Config:
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+    CACHE_TYPE = 'filesystem'  # 使用文件系统来存储缓存的值
+    CACHE_DIR = os.path.join(BASE_DIR, 'App/cache_dir')
+
+    MAIL_SERVER = 'smtp.163.com'
+
+    MAIL_PORT = 25
+
+    MAIL_USERNAME = 'pengfan929848421@163.com'
+
+    # MAIL_PASSWORD = 'PF929848421'
+    MAIL_PASSWORD = 'XWNEUHSIDVGCBPSY'
+
+    MAIL_DEFAULT_SENDER = MAIL_USERNAME
+
 
 class DevelopConfig(Config):
     DEBUG = True

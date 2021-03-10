@@ -14,3 +14,6 @@ manager.add_command('db', MigrateCommand)
 
 if __name__ == '__main__':
     manager.run()
+    from wsgiref.simple_server import make_server
+    server = make_server()
+    server.serve_forever()
